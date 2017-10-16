@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 
+echo "This script needs SSH keys set up first"
+
+if [ ! -d ~/.bootstrap ]; then
+    mkdir ~/.bootstrap 
+fi
+pushd ~/.bootstrap
+
 # install cli xcode tools
 if [ ! -x /usr/bin/gcc ]; then
     xcode-select --install
@@ -9,6 +16,8 @@ fi
 if [ ! $(which brew) ]; then
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
+
+curl -fsSL https://raw.githubusercontent.com/jordanlabs/bootstrap/master/Brewfile -o Brewfile
 
 # Brewfile is in the same directory as the bootstrap.sh script
 brew update && brew bundle
@@ -29,5 +38,5 @@ if [ ! -f ~/.vim/autoload/plug.vim ]; then
     vim +PluginInstall +qall
 fi
 
-
+popd
 echo "----------- DONE -----------"
