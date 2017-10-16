@@ -1,0 +1,2 @@
+# bootstrap
+Laptop bootstrap scripts
