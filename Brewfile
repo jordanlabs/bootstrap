@@ -1,8 +1,9 @@
 cask_args appdir: '/Applications'
 
-tap "caskroom/fonts"
-tap "homebrew/bundle"
 tap "homebrew/core"
+tap "homebrew/bundle"
+tap "caskroom/fonts"
+tap "caskroom/drivers"
 
 brew "bash"
 brew "git"
@@ -20,6 +21,8 @@ brew "tmux"
 brew "vim"
 brew "wget"
 brew "jq"
+brew "terminal-notifier"
+brew "shellcheck"
 
 cask "iterm2"
 cask "kindle"
@@ -35,3 +38,4 @@ cask "zoomus"
 cask "alfred"
 cask "visual-studio"
 cask "caskroom/fonts/font-inconsolata"
+cask "caskroom/drivers/logitech-options"
