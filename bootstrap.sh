@@ -24,10 +24,13 @@ brew update && brew bundle
 
 # setup dotfiles
 if [ ! -d ~/.dotfiles ]; then
-    git clone git@bitbucket.org:hexaddikt/dotfiles.git .dotfiles
-    pushd ~/.dotfiles
-    rake install
-    popd
+    git clone git@bitbucket.org:hexaddikt/dotfiles.git ~/.dotfiles
+
+    if [ $? -eq 0 ]; then
+        pushd ~/.dotfiles
+        rake install
+        popd
+    fi
 fi
 
 if [ ! -f ~/.vim/autoload/plug.vim ]; then
@@ -35,7 +38,7 @@ if [ ! -f ~/.vim/autoload/plug.vim ]; then
     curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-    vim +PluginInstall +qall
+    vim +PlugInstall +qall
 fi
 
 popd
