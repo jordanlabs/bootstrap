@@ -24,6 +24,7 @@ brew "jq"
 
 cask "iterm2"
 cask "kindle"
+cask "dropbox"
 cask "virtualbox"
 cask "vagrant"
 cask "google-chrome"
