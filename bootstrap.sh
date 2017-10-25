@@ -22,6 +22,9 @@ curl -fsSL https://raw.githubusercontent.com/jordanlabs/bootstrap/master/Brewfil
 # Brewfile is in the same directory as the bootstrap.sh script
 brew update && brew bundle
 
+# Gem installs
+gem install rake rspec
+
 # setup dotfiles
 if [ ! -d ~/.dotfiles ]; then
     git clone git@bitbucket.org:hexaddikt/dotfiles.git ~/.dotfiles
