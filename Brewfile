@@ -28,6 +28,7 @@ brew "vim"
 brew "wget"
 brew "jq"
 brew "terminal-notifier"
+brew "tree"
 brew "shellcheck"
 
 cask "iterm2"
