@@ -16,6 +16,7 @@ brew "htop"
 brew "httpie"
 brew "kubernetes-cli"
 brew "libimobiledevice", args: ["HEAD"]
+brew "lynx"
 brew "node"
 brew "p7zip"
 brew "python"
