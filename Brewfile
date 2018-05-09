@@ -34,6 +34,7 @@ brew "tree"
 brew "shellcheck"
 
 cask "iterm2"
+cask "dbeaver-community"
 cask "kindle"
 cask "dropbox"
 cask "docker"
