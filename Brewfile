@@ -8,6 +8,7 @@ tap "caskroom/versions"
 
 brew "ag"
 brew "awscli"
+brew "awslogs"
 brew "bash"
 brew "git"
 brew "mobile-shell"
