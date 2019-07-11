@@ -6,6 +6,7 @@ tap "caskroom/fonts"
 tap "caskroom/drivers"
 tap "caskroom/versions"
 tap "aws/tap"
+tap "adoptopenjdk/openjdk"
 
 brew "ag"
 brew "awscli"
