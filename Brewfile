@@ -18,6 +18,7 @@ brew "carthage"
 brew "htop"
 brew "httpie"
 brew "hub"
+brew "jenv"
 brew "kubernetes-cli"
 brew "libimobiledevice", args: ["HEAD"]
 brew "lynx"
